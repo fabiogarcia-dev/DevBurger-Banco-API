@@ -1,0 +1,41 @@
+{
+  "name": "devburguer",
+  "version": "1.0.0",
+  "description": "DevBurguer API",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "keywords": [],
+  "author": "Fábio Garcia",
+  "url": "https://github.com/fabiogarcia-dev",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@sequelize/postgres": "^7.0.0-alpha.46",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.0",
+    "multer": "^2.0.2",
+    "pg": "^8.16.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.7",
+    "uuid": "^11.1.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@eslint/json": "^0.13.1",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-config-xo": "^0.48.0",
+    "eslint-plugin-prettier": "^5.5.3",
+    "globals": "^16.3.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "sequelize-cli": "^6.6.3",
+    "sucrase": "^3.35.0"
+  }
+}

@@ -1,8 +1,12 @@
 import mongoos from "mongoose"
 
+/**O OrderSchema define a estrutura de pedidos no MongoDB usando Mongoose.
+ Cada pedido armazena informações do usuário (id e name), uma lista de produtos com detalhes como id, name, price, category, url e quantity, além de um status do pedido. 
+ O schema também registra automaticamente timestamps (createdAt e updatedAt). */
+
 const OrderSchema = new mongoos.Schema({
     user: {
-        id:{
+        id: {
             type: String,
             required: true,
         },

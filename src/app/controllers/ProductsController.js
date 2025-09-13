@@ -3,6 +3,21 @@ import Product from '../models/Products'
 import Category from '../models/Category'
 import User from '../models/User'
 
+/**Criar produto (store)
+Apenas admins
+Recebe nome, preço, categoria, oferta e imagem
+Valida dados com Yup
+Retorna produto criado
+Atualizar produto (update)
+Apenas admins
+Verifica existência do produto
+Atualiza dados e imagem
+Listar produtos (index)
+Retorna todos os produtos com a categoria associada
+Validação com Yup para dados consistentes
+Controle de acesso baseado em admin
+Integração Sequelize com tabelas de produtos e categorias */
+
 class ProductsController {
     async store(request, response) {
         const schema = Yup.object({

@@ -7,6 +7,9 @@ import ProductsController from './app/controllers/ProductsController'
 import CategoryController from './app/controllers/CategoryController'
 import authMiddleware from './app/middleware/auth'
 import OrderController from './app/controllers/OrderController';
+import CreatePaymentIntentController from './app/controllers/CreatePaymentIntentController'
+
+/**Rotas a ser utilizadas pelo front-end */
 
 const routes = new Router()
 
@@ -27,5 +30,7 @@ routes.put('/categories/:id', upload.single('file'), CategoryController.update);
 routes.post('/orders', OrderController.store);
 routes.get('/orders', OrderController.index);
 routes.put('/orders/:id', OrderController.update);
+
+routes.post("/create-payment-intent", CreatePaymentIntentController.store);
 
 export default routes

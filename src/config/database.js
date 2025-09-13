@@ -1,3 +1,5 @@
+/**exportando modulo para conexão com banco de dados/porta */
+
 module.exports = {
     username:'postgres',
     password: 'postgres',
@@ -11,3 +13,5 @@ module.exports = {
         underscoredAll: true,
     },
   };
+
+  

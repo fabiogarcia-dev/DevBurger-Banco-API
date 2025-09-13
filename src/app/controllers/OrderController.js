@@ -4,6 +4,21 @@ import Products from '../models/Products'
 import Category from '../models/Category'
 import User from '../models/User'
 
+/**O OrderController gerencia pedidos:
+Criar pedido (store)
+Valida produtos e quantidade
+Busca produtos no banco
+Formata e salva no MongoDB
+Inclui usuário e status
+Listar pedidos (index)
+Retorna todos os pedidos
+Atualizar status do pedido (update)
+Apenas admins
+Atualiza status de um pedido específico
+Validação com Yup para entrada de dados
+Controle de acesso baseado em admin
+Integração Sequelize + MongoDB (produtos vêm do SQL, pedidos vão para NoSQL) */
+
 class OrderController {
     async store(request, response) {
         const schema = Yup.object({

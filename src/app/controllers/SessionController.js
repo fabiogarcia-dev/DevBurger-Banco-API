@@ -3,6 +3,15 @@ import *as Yup from 'yup'
 import jwt from 'jsonwebtoken'
 import authConfig from '../../config/auth'
 
+/**O SessionController gerencia login de usuários:
+Valida entrada com Yup (email e password)
+Verifica se o usuário existe
+Confere a senha com hash armazenado
+Gera JWT com informações do usuário
+Retorna dados do usuário + token para autenticação em rotas protegidas
+Se qualquer passo falhar, retorna 401 Unauthorized
+Facilita a autenticação segura do front-end. */
+
 class SessionController{
     async store(request, response){
         const schema = Yup.object({

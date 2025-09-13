@@ -1,4 +1,13 @@
-/**
+/**O UserController gerencia a criação de usuários:
+Valida os dados com Yup
+Checa se o email já existe
+Cria o usuário com UUID único
+Retorna dados do usuário (sem a senha)
+Gerencia erros com códigos HTTP corretos:
+400 → dados inválidos
+409 → usuário já existe
+201 → usuário criado com sucesso
+
  * store => Cadastrar / Adcionar
  * index => Listar Varios
  * show => Listar apenas um

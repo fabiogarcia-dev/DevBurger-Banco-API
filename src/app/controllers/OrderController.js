@@ -73,7 +73,7 @@ class OrderController {
                 name: request.userName,
             },
             products: formattedProducts,
-            status: 'Pedido realizado com sucesso',
+            status: 'Pedido realizado',
         };
 
 
